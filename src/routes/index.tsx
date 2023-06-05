@@ -40,6 +40,7 @@ export const BeerGiver = component$(() => {
 
 export const BeerGiverButton = component$(() => {
   const gotBeerSignal = useContext(beerContextId);
+
   return (
     <button onClick$={() => (gotBeerSignal.value = !gotBeerSignal.value)}>
       Give a Beer to Misko
